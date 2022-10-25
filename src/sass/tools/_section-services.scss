@@ -1,0 +1,140 @@
+// Estilos de Nuestro Servicios
+
+.main-section-services {
+   width: 100%;
+   height: auto;
+   padding: 30px 0;
+   // background: #ddd;
+}
+
+.section-servicer {
+   width: auto;
+   height: auto;
+   margin: 0 10px;
+   padding-bottom: 40px;
+   // background: teal;
+}
+
+.page-services {@include page(50px, 65px);}
+
+.main-cards {
+   margin-top: 50px;
+   // background: #666;
+}
+
+
+.content-cards {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+
+   & .cards {
+      width: 90%;
+      height: 310px;
+      margin: 10px;
+      overflow: hidden;
+      border-radius: 5px;
+      background-color: $bgSecondary;
+      transition: all 300ms;
+
+      &-info {
+         position: relative;
+         width: auto;
+         height: 100%;
+         padding: 0 25px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         transition: 500ms ease-in-out;
+         // background: #ddd;
+
+         & .cards-icon {margin-top: -70px;}
+
+         & .cards-title {
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-size: 20px;
+            text-align: center;
+            font-family: $ftTitle;
+            font-weight: $wtCard;
+            color: $clTextSecondary;
+         }
+
+         & .cards-btn {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            background-color: $bgBtnInfo;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.16);
+            cursor: pointer;
+            transition: 300ms;
+            -webkit-tap-highlight-color: transparent;
+
+            & .fa-angle-up {color: $clTextWhite;}
+         }
+
+
+         // Eventos de las CARDS - Botones
+         & .cards-btn-event {
+            transform: rotate(180deg);
+            background-color: $bgBtnDanger;
+            bottom: -60px;
+         }
+      }
+
+
+      // Descripcion de las CARDS
+      &-descript {
+         width: auto;
+         padding: 0 25px;
+         transition: 600ms ease-in-out;
+
+         & .cards-title-descript {
+            margin-top: 30px;
+            font-size: 20px;
+            text-align: center;
+            font-family: $ftTitle;
+            font-weight: $wtCard;
+            color: $clTextPrimary;
+         }
+
+         & .cards-paragraph-descript {
+            font-size: 16px;
+            text-align: center;
+            font-family: $ftParagraph;
+            font-weight: $wtParagraph;
+            color: $clTextSecondary;
+         }
+      }
+
+      
+      // Eventos de las CARDS
+      .cards-info-events {transform: translateY(-310px);}
+
+      // Eventos de las CARDS
+      .cards-descript-events {transform: translateY(-250px);}
+   }
+
+   & .cards:hover {
+      box-shadow: 0px 16px 46px rgba(0, 0, 0, 0.1);
+      background: #FFF;
+   }
+}
+
+
+// Animaciones
+
+.content-cards {
+   & .cards {
+      animation: bounceIn 1.5s;
+   }
+}

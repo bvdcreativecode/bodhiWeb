@@ -1,0 +1,86 @@
+// Estilos de pie de página footer
+
+.main-foot {
+   max-width: 1366px;
+   width: 100%;
+   padding: 50px 0 10px;
+   background-color: $bgDark;
+}
+
+.content-foot,
+.content-foot-reserved {
+   margin: 0 10px;
+}
+
+.article-foot {
+   // background: blue;
+
+   & .foot-h6, & .foot-p {
+      font-size: 14px;
+      font-family: $ftSubParagrah;
+      font-weight: $wtLight;
+      color: $clTextSuccess;
+   }
+
+   & .foot-h6 {
+      margin-top: 40px;
+      margin-bottom: 10px;
+   }
+}
+
+.foot-networds {
+   margin-top: 35px;
+   & .foot-social {
+      margin-right: 25px;
+
+      & .fa-instagram,
+      & .fa-facebook-f,
+      & .fa-linkedin-in {
+         color: $clTextSuccess;
+         transition: 300ms;
+      }
+
+      & .fa-instagram:hover,
+      & .fa-facebook-f:hover,
+      & .fa-linkedin-in:hover {
+         color: $clTextWhite;
+      }
+   } 
+}
+
+.foot-services,
+.foot-target,
+.foot-contact {
+   margin-top: 50px;
+   & .foot-title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 17px;
+      font-family: $ftTitle;
+      font-weight: $wtSecondary;
+      color: $clTextLight;
+   }
+
+   & .foot-services-p,
+   & .foot-target-p, 
+   & .foot-contact-p {
+      margin: 10px 0;
+      font-size: 14px;
+      font-family: $ftSubParagrah;
+      font-weight: $wtLight;
+      color: $clTextSuccess;
+   }
+}
+
+
+
+.content-foot-reserved {
+   margin-top: 50px;
+   & .text-reserved {
+      font-size: 13px;
+      text-align: center;
+      font-family: $ftSubParagrah;
+      font-weight: $wtLight;
+      color: $clTextSecondary;
+   }
+}

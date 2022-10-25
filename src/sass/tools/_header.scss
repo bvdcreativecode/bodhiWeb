@@ -1,0 +1,134 @@
+// Estilos del header principal
+
+.main-header {
+   width: 100%;
+   padding-top: 70px;
+   background-color: $bgHeader;
+}
+
+.main-section {
+   width: auto;
+   height: auto;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.box-section {
+   width: 100%;
+}
+
+
+// Estilos del contenedor texto
+.box-title {
+   width: 100%;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   height: auto;
+
+   &__h1 {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: center;
+      font-size: 42px;
+      font-family: $ftTitle;
+      font-weight: $wtTitle;
+      color: $clTextPrimary;
+   }
+}
+
+.typed-text {
+   display: block;
+   color: $clTextInfo;
+}
+
+.box-title__p {
+   margin-top: 20px;
+   margin-bottom: 45px;
+   text-align: center;
+   font-size: 16px;
+   font-family: $ftParagraph;
+   font-weight: $wtParagraph;
+   color: $clTextSecondary;
+}
+
+
+// Estilos del contenedor de los botones
+.box-header-btn {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.btn-contact, .btn-plus {
+   margin: 5px;
+   @include buttons(195px, null);
+}
+
+.btn-contact {background-color: $bgBtnDanger;}
+.btn-plus {background-color: $bgBtnInfo;}
+.btn-contact:hover {box-shadow:0 4px 16px #e8505a81;}
+.btn-plus:hover {box-shadow:0 4px 16px #2AA19881;}
+
+
+// Estilos del contenedor IMG
+.box-img {
+   width: 100%;
+   height: auto;
+   margin: 5px 0;
+   display: flex;
+   justify-content: center;
+}
+
+.img {
+   position: relative;
+   max-width: 568px;
+   width: 100%;
+   height: 312px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &-one {
+      position: absolute;
+      width: 108px;
+      right: 10px;
+      top: 80px;
+   }
+
+   &-two {
+      position: absolute;
+      width: 111px;
+      top: 0;
+      right: 140px;
+   }
+
+   &-three {
+      position: absolute;
+      width: 129px;
+      left: 10px;
+   }
+
+   &-humans {
+      position: absolute;
+      width: 210px;
+      height: 190;
+   }
+
+   &-pointer {
+      position: absolute;
+      top: 130px;
+      right: 110px;
+   }
+}
+
+
+// Animaciones de la imagen del Header pincipal
+.img {
+   animation: bounceIn 1.5s; // Libreria Animate css
+}
+
+.img-one,
+.img-two,
+.img-three {
+   animation: flipInX 3s; // Libreria Animate css
+}

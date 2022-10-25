@@ -1,0 +1,36 @@
+// Estilos para el boton po-up Arriba
+
+.container-button-up {
+   position: fixed;
+   width: 3.5rem;
+   height: 3.1rem;
+   bottom: 1.5rem;
+   right: 0;
+   z-index: 10;
+}
+
+.button-up {
+   width: 3.5rem;
+   height: 3.1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transform: translate(3.5rem);
+   background-color: $bgBtnDanger;
+   border-radius: 5px 0 0 5px;
+   transition: 200ms;
+   cursor: pointer;
+
+
+   & .fa-chevron-up {
+      font-size: 1.5rem;
+      color: $clTextLight;
+   }
+}
+
+//Evento JS 
+.event-btn-up {
+   box-shadow: 0 2px 4px rgba(0, 0, 0, .30);
+   transform: translate(0rem);
+   transition: 200ms;
+}

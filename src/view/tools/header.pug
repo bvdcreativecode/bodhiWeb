@@ -1,0 +1,25 @@
+//- Header principal de la página 
+
+header(class="main-header", id="inicio")
+   include ../includes/menu.pug
+   section(class="main-section")
+      div(class="box-section")
+         div(class="box-title")
+            h1(class="box-title__h1")= `${titleH1.part} `
+               span(class="typed-text")
+                  span(class="typed")
+               span(id="texto-animacion")
+                  strong= titleH1.name
+                  strong= titleH1.we
+            p(class="box-title__p") #{subTitleOne}
+            include ../mixins/buttons.pug
+            div(class="box-header-btn")
+               +button('btn-contact', '#', btnAction.btnContact)
+               +button('btn-plus', '#', btnInfo.btnPLus)
+         div(class="box-img")
+            div(class="img wow")
+               img(class="img-one wow", src="./assets/svg/imgHeader/img-one.svg", alt="windows")
+               img(class="img-two wow", src="./assets/svg/imgHeader/img-two.svg", alt="play")
+               img(class="img-three wow", src="./assets/svg/imgHeader/img-three.svg", alt="windows")
+               img(class="img-humans", src="./assets/svg/imgHeader/img-humans.svg", alt="humans")
+               img(class="img-pointer wow", src="./assets/svg/imgHeader/img-pointer.svg", alt="cursor pointer")

@@ -1,0 +1,61 @@
+// Estilos de la Sección Nuestros clientes
+
+.main-section-clients {
+   // background: #DDD;
+   width: 100%;
+   height: auto;
+   padding: 30px 0;
+}
+
+.box-section-clients {
+   // background: #21209c;
+   width: auto;
+   height: auto;
+   margin: 0 10px;
+}
+
+.page-clients {@include page(50px, 65px);}
+
+.content-clients {
+   margin-top: 50px;
+   padding-bottom: 30px;
+   // background: teal;
+}
+
+.clients-title {
+   margin-bottom: 70px;
+   // background: red;
+
+   & .clients-title-h2 {
+      text-align: center;
+      font-size: 32px;
+      font-family: $ftTitle;
+      font-weight: $wtPrimary;
+      color: $clTextPrimary;
+   }
+}
+
+
+.box-clients {
+   max-width: 940px;
+   margin: auto;
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   // background: #21209c;
+
+   & .clients-links {
+      display: block;
+      width: 132px;
+      height: 132px;
+      -webkit-tap-highlight-color: transparent;
+      // background: red;
+   }
+}
+
+.clients-links {
+   animation: bounceIn 1.5s;
+}

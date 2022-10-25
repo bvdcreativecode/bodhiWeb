@@ -1,0 +1,21 @@
+//- Section Sobre nosotros de la página
+
+section(class="main-section-we" id="sobre-nosotros")
+   include ../mixins/pagination.pug
+   div(class="page-we")
+      +pagination(paginations.pageOne)
+   div(class="box-section-we")
+      div(class="box-section-img")
+         div(class="section-img")
+            img(class="img-computer wow", src="./assets/svg/imgWe/img-computer.svg", alt="computer")
+            img(class="img-persons wow", src="./assets/svg/imgWe/img-persons.svg", alt="persons")
+            img(class="img-plane wow", src="./assets/svg/imgWe/img-paper-plane.svg", alt="paper plane")
+      header(class="box-header-we")
+         div(class="header-we-title")
+            h2(class="we-title-h2") <i class="we-title-i">#{titleWe.part} </i>#{titleWe.text}
+            h4(class="we-subtitle-h4") #{subTitleWe.crea} &#124; #{subTitleWe.com} &#124; #{subTitleWe.inn} &#124; #{subTitleWe.exp}
+            p(class="we-paragraph") #{paragraphWeOne}
+            p(class="we-paragraph") #{paragraphWeTwo}
+         include ../mixins/buttons.pug
+         div(class="we-btn")
+            +button('we-btn-services', '#', btnInfo.btnServices)

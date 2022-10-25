@@ -1,0 +1,79 @@
+//
+
+@media only screen and (min-width: 768px) {
+   .box-contact-phone,
+   .box-contact-email,
+   .box-contact-addres {
+      padding-left: 80px;
+   }
+   .box-form {
+      width: 493px;
+      margin: auto;
+   }
+
+}
+
+@media only screen and (min-width: 1024px) {
+   .box-contact {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .content-contact {
+      margin-left: 10px;
+   
+      & .contact-title-h2 {
+         margin-top: 50px;
+         text-align: start;
+      }
+   
+      & .contact-paragraph-p {
+         width: 337px;
+         text-align: start;
+         padding: 0;
+
+      }
+   }
+
+   .box-contact-phone,
+   .box-contact-email,
+   .box-contact-addres {
+      padding-left: 0px;
+   }
+
+   .content-form-contact {
+      margin-top: 0;
+   }
+
+}
+
+@media only screen and (min-width: 1100px) {
+   .section-contact {
+      max-width: 1366px;
+      margin: auto;
+   }
+
+   .page-contact {
+      @include page(80px, 95px);
+      margin-left: 100px;
+   }
+
+   .box-contact {
+      margin-top: 50px;
+      margin-left: 100px;
+      margin-right: 100px;
+   }
+
+   .content-contact {
+      margin-left: 0;
+   }
+
+   .box-contact-phone {
+      margin-top: 55px;
+   }
+
+   .content-form-contact {
+      padding: 40px;
+   }
+
+}

@@ -1,0 +1,138 @@
+// Estilos del la sección Nosotros
+.main-section-we {
+   width: 100%;
+   height: auto;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.page-we {@include page(50px, 65px);
+   left: 10px;}
+
+.box-section-we {
+   width: 100%;
+   height: auto;
+   margin-top: 50px;
+   display: flex;
+   flex-wrap: wrap-reverse;
+}
+
+.box-header-we {
+   width: 100%;
+   height: auto;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+// Estilos de la segunda imagen
+.box-section-img {
+   width: 100%;
+   height: auto;
+   margin: 20px 0;
+}
+
+.section-img {
+   position: relative;
+   width: auto;
+   height: 240px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 10px;
+   margin-right: 10px;
+
+   & .img-computer {
+      position: absolute;
+      width: 326px;
+      height: 164px;
+      bottom: 0;
+   }
+
+   & .img-persons {
+      position: absolute;
+      width: 159px;
+      height: 211px;
+      bottom: 30px;
+   }
+
+   & .img-plane {
+      position: absolute;
+      width: 87px;
+      height: 26px;
+      bottom: 60px;
+      left: 15px;
+   }
+}
+
+
+// Estilos de los titulos y parrafo
+.header-we-title {
+   
+   & .we-title-h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 42px;
+      text-align: center;
+      font-family: $ftTitle;
+      font-weight: $wtTitle;
+      color: $clTextPrimary;
+
+      & .we-title-i {
+         font-size: 38px;
+         display: block;
+         font-style: normal;
+         font-weight: $wtParagraph;
+      }
+   }
+
+   & .we-subtitle-h4 {
+      font-size: 17px;
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-align: center;
+      font-family: $ftParagraph;
+      font-weight: $wtParagraph;
+      color: $clTextInfo;
+   }
+
+   & .we-paragraph {
+      margin: 0;
+      padding: 0 20px 16px;
+      font-size: 16px;
+      text-align: center;
+      font-family: $ftParagraph;
+      font-weight: $wtParagraph;
+      color: $clTextSecondary;
+   }
+}
+
+// Estilos de los botones
+.we-btn {
+   width: 100%;
+   height: auto;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   height: auto;
+
+   &-services {
+      display: block;
+      margin: auto;
+      @include buttons(195px, $bgBtnInfo);
+   }
+
+   &-services:hover{box-shadow:0 4px 16px #2AA19881;}
+}
+
+
+// Animaciones
+.img-computer {
+   animation: bounceIn 1.5s; // Libreria Animate css
+}
+
+.img-persons {
+   animation: flipInX 2s; // Libreria Animate css
+}
+
+.img-plane {
+   animation: fadeInBottomLeft 2s; // Libreria Animate css
+}

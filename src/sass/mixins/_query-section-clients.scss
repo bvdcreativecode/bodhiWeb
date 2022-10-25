@@ -1,0 +1,12 @@
+@media only screen and (min-width: 1100px) {
+   .box-section-clients {
+      max-width: 1366px;
+      margin: auto;
+      width: auto;
+   }
+
+   .page-clients {
+      @include page(80px, 95px);
+      margin-left: 100px;
+   }
+}

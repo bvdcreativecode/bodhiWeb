@@ -1,0 +1,89 @@
+// MEDIAS QUERY PARA EL HEADER PRINCIPAL
+@media only screen and (min-width: 480px) {
+   .img {
+      &-one {width: 128px;}
+      &-two {width: 121px; right: 190px;}
+      &-three {width: 139px;}
+      &-humans {width: 219px; height: 199;}
+      &-pointer {right: 160px;}
+   }
+}
+
+@media only screen and (min-width: 768px) {
+   .typed-text {display: inline-block;}
+   .box-title__p {padding: 0 40px;}
+   .btn-contact {margin-right: 20px;}
+   .img {
+      &-one {width: 148px; right: 70px;}
+      &-two {width: 141px; right: 230px;}
+      &-three {width: 149px; left: 70px;}
+      &-humans {width: 229px; height: 209;}
+      &-pointer {right: 230px;}
+   }
+}
+
+@media only screen and (min-width: 1024px) {
+   .box-img {padding: 20px 0 60px;}
+   .img {
+      &-one {width: 173px; right: 0px; top: 100px;}
+      &-two {width: 169px; right: 190px;}
+      &-three {width: 208px; left: 0px; top: 120px;}
+      &-humans {width: 274px; height: 254; top: 55px;}
+      &-pointer {right: 210px; top: 150px;}
+   }
+}
+
+@media only screen and (min-width: 1100px) {
+   .main-header {
+      width: 100%;
+      height: 589px;
+   }
+   .main-section {
+      max-width: 1366px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+   }
+
+   .box-section {
+      margin-left: 100px;
+      margin-right: 100px;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .box-title {
+      width: 540px;
+      margin-top: 105px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &__h1 {
+         text-align: start;
+         font-size: 48px;
+      }
+   }
+
+   .box-title__p {
+      text-align: start;
+      padding: 0 55px 0 0;
+   }
+
+   .box-header-btn {
+      flex-wrap: nowrap;
+      justify-content: left;
+   }
+
+   .btn-contact,
+   .btn-plus {
+      margin-right: 25px;
+      margin-left: 0;
+      @include buttons(150px, null);
+   }
+
+   .box-img {
+      width: 600px;
+      height: auto;
+      margin-top: 115px;
+      justify-content: flex-end;
+   }
+}

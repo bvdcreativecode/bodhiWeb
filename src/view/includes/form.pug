@@ -1,0 +1,20 @@
+//- Formulario de Contácto
+-const label = {name:'Nombre Completo', email:'E-mail', phone:'Teléfono', msm:'Mensaje'}
+
+div(class="box-form")
+   form(action="index.php", method="post")
+      div(class="form-content")
+         label(class="form-label")= label.name
+            i(class="label-check") *
+         input(class="form-input" type="text" placeholder="¿Cuál es tu nombre?")
+         label(class="form-label")= label.email
+            i(class="label-check") *
+         input(class="form-input" type="email" placeholder="¿A que correo te respondemos?")
+         label(class="form-label")= label.phone
+            i(class="label-check") *
+         input(class="form-input" type="text" placeholder="¿Algún número para llamarte?")
+         label(class="form-label")= label.msm
+            i(class="label-check") *
+         textarea(class="form-textarea" placeholder="¿Que te gustaria contarnos...?")
+      div(class="box-btn-form")
+         input(class="btn-form", type="submit" value=`${btnAction.btnForm}`)

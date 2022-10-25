@@ -1,0 +1,23 @@
+@mixin page($wt, $ml){
+   position: relative;
+   width: 80%;
+
+   & .page-text {
+      font-size: 24px;
+      font-family: $ftPage;
+      font-weight: $wtParagraph;
+      color: $clTextDanger;
+      margin-left: $ml;
+   }
+
+   &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: $wt;
+      height: 2px;
+      top: 15px;
+      left: 0;
+      background-color: $bgBtnDanger;
+   }
+}

@@ -1,0 +1,10 @@
+//- Section Nuestros Servicios de la página
+
+section(class="main-section-services", id="nuestros-servicios")
+   div(class="section-servicer")
+      include ../mixins/pagination.pug
+      div(class="page-services")
+         +pagination(paginations.pageTwo)
+      header(class="main-cards")
+         div(class="content-cards")
+            include ../includes/cards.pug

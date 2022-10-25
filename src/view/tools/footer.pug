@@ -1,0 +1,29 @@
+//- Footer de la página completa
+footer(class="main-foot")
+   div(class="content-foot")
+      article(class="article-foot")
+         img(src="./assets/img/imgLogo/logotipo-2.svg", alt="logotipo bodhi")
+         h6(class="foot-h6") #{textOneFoot}
+         p(class="foot-p") #{textTwoFoot}
+         div(class="foot-networds")
+            a(class="foot-social", href="#"): i(class="fab fa-instagram")
+            a(class="foot-social", href="#"): i(class="fab fa-facebook-f") 
+            a(class="foot-social", href="#"): i(class="fab fa-linkedin-in")
+
+      article(class="foot-target")
+         h5(class="foot-title")= titleFoot.titleTwo
+         p(class="foot-target-p") #{textTarget}
+
+      article(class="foot-services")
+         h5(class="foot-title")= titleFoot.titleOne
+         p(class="foot-services-p")= textServicesFoot.textTwo
+         p(class="foot-services-p")= textServicesFoot.textOne
+         p(class="foot-services-p")= textServicesFoot.textThree
+
+      article(class="foot-contact") 
+         h5(class="foot-title")= titleFoot.titleThree
+         p(class="foot-contact-p")= textContactFoot.email
+         p(class="foot-contact-p")= textContactFoot.address
+         p(class="foot-contact-p")= textContactFoot.phone
+   div(class="content-foot-reserved")
+      p(class="text-reserved") #{textReservedFoot}

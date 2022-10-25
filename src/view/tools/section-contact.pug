@@ -1,0 +1,32 @@
+//- Section Contáctanos de la página
+
+section(class="main-section-contact" id="contactanos")
+   div(class="section-contact")
+      include ../mixins/pagination.pug
+      div(class="page-contact")
+         +pagination(paginations.pageFour)
+      div(class="box-contact")
+         header(class="content-contact")
+            h2(class="contact-title-h2") #{titleContact}
+            p(class="contact-paragraph-p") #{paragraphContact}
+
+            div(class="box-contact-phone")
+               img(src="./assets/icon/iconContact/icon-phone.svg", alt="icono phone")
+               div(class="box-text")
+                  h3(class="contact-title")= titleContactInfo.phone
+                  span(class="phone")= paragraphContactInfo.phone
+
+            div(class="box-contact-email")
+               img(src="./assets/icon/iconContact/icon-mail.svg", alt="icono email")
+               div(class="box-text")
+                  h3(class="contact-title")= titleContactInfo.email
+                  span(class="email")= paragraphContactInfo.email
+
+            div(class="box-contact-addres")
+               img(src="./assets/icon/iconContact/icon-search.svg", alt="icono search")
+               div(class="box-text")
+                  h3(class="contact-title")= titleContactInfo.address
+                  span(class="address")= paragraphContactInfo.address
+
+         div(class="content-form-contact")
+            include ../includes/form.pug

@@ -1,0 +1,21 @@
+include config/vrtitle.pug
+include config/vrmenu.pug
+include config/vrbutton.pug
+
+doctype html
+html(lang="es")
+   include tools/head.pug
+   body
+      include tools/header.pug
+      main(class="main")
+         include tools/section-we.pug
+         include tools/section-services.pug
+         include tools/section-contact.pug
+         include tools/section-clients.pug
+         include tools/button-up.pug
+         include tools/footer.pug
+      script(src="./js/typed.min.js.map")
+      script(src="https://wowjs.uk/dist/wow.min.js") 
+      script(src="./js/main.js")
+      script.
+         new WOW().init();

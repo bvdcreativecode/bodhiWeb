@@ -1,0 +1,33 @@
+// Media querys para el Footer
+
+@media only screen and(min-width: 1024px) {
+   .main-foot {
+      padding: 80px 0 10px;
+      margin: auto;
+   }
+
+   .content-foot,
+   .content-foot-reserved {
+      margin: 0 100px;
+      // background: red;
+   }
+
+   .content-foot {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .article-foot {
+      width: 300px;
+   }
+
+   .foot-services,
+   .foot-target,
+   .foot-contact {
+      margin-top: 70px;
+   }
+
+   .content-foot-reserved {
+      margin-top: 50px;
+   }
+}

@@ -1,0 +1,17 @@
+//- Menú de navegación de la página 
+
+nav(class="main-nav")
+   div(class="box-nav")
+      div(class="nav-logo")
+         img(class="logo", src="./assets/img/imgLogo/logotipo.svg", alt="logotipo bodhi")
+
+      ul(class="nav-ul")
+         each item, i in itemMenu
+            li(class="nav-li")
+               a(class="nav-li__link" href=`#${idNavItems[i]}`)= item
+
+      div(class="nav-btn", id="btn-menu")
+         div
+            span(class="nav-btn-responsive")
+            span(class="nav-btn-responsive")
+            span(class="nav-btn-responsive")

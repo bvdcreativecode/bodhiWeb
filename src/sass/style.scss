@@ -1,0 +1,27 @@
+@import './config/fonts';
+@import './config/colors';
+@import './base/base';
+@import './base/html-smoot-scroll';
+@import './base/normalize';
+@import './blocks/buttons';
+@import './blocks/pagination';
+@import './blocks/button-up';
+
+// ESTILOS CSS DE LA PAGINA PRINCIPAL
+@import './tools/menu';
+@import './tools/main';
+@import './tools/header';
+@import './tools/section-we';
+@import './tools/section-services';
+@import './tools/section-contact';
+@import './tools/section-clients';
+@import './tools/fotter';
+
+// MEDIA QUERYS DE LA PAGINA PRINCIPAL
+@import './mixins/query-menu';
+@import './mixins/query-header';
+@import './mixins/query-section-we';
+@import './mixins/query-section-services';
+@import './mixins/query-section-contact';
+@import './mixins/query-section-clients';
+@import './mixins/query-footer';

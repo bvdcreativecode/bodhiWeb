@@ -1,0 +1,104 @@
+// Media Query para la sección Nosotros
+
+
+@media only screen and (min-width: 768px) {
+   .header-we-title {
+      & .we-paragraph {padding: 0 60px 16px;}
+   }
+
+   .section-img {
+      & .img-plane {left: 190px;}
+   }
+}
+
+@media only screen and (min-width: 1024px) {
+   .main-section-we {padding-top: 60px;}
+
+   .page-we {
+      left: 30px;
+   }
+
+   .section-img {
+      width: 456px;
+      height: 363px;
+      margin: auto;
+   
+      & .img-computer {
+         width: 425px;
+         height: 263px;
+      }
+   
+      & .img-persons {
+         width: 248px;
+         height: 300px;
+         top: 0;
+      }
+   
+      & .img-plane {
+         width: 96px;
+         height: 34px;
+         bottom: 60px;
+         left: 0;
+      }
+   }
+}
+
+@media only screen and (min-width: 1100px) {
+   .main-section-we {
+      max-width: 1366px;
+      margin: auto;
+      height: 589px;
+      // background: red;
+   }
+
+   .page-we {
+      left: 100px;
+      @include page(80px, 95px);
+   }
+
+   .box-section-we {flex-wrap: nowrap;}
+
+   .box-header-we {
+      width: 515px;
+      height: 433px;
+      margin-left: 25px;
+      margin-right: 0;
+   }
+
+   .box-section-img {
+      width: auto;
+      margin: 25px 100px 0 100px;
+   }
+
+   .section-img {
+      width: 456px;
+      height: 363px;
+      margin: 0;
+   }
+
+   .header-we-title {
+      & .we-title-h2 {
+         font-size: 48px;
+         text-align: start;
+
+         & .we-title-i {
+            font-size: 42px;
+         }
+      }
+
+      & .we-subtitle-h4 {
+         text-align: start;
+      }
+
+      & .we-paragraph {
+         padding: 0 0 16px;
+         text-align: start;
+      }
+   }
+
+   .we-btn {
+      &-services {
+         margin: 0;
+      }
+   }
+}

@@ -1,0 +1,170 @@
+// Estilos de la sección Contáctanos
+
+.main-section-contact {
+   width: 100%;
+   height: auto;
+   padding: 30px 0;
+   // background-color: red;
+}
+
+.section-contact {
+   width: auto;
+   height: auto;
+   // background-color: blue;
+}
+
+.page-contact {
+   @include page(50px, 65px);
+   margin-left: 10px;
+}
+
+.box-contact {
+   margin-top: 50px;
+   // background: lightsteelblue;
+}
+
+.content-contact {
+   margin: 0 10px;
+   // background: lightblue;
+
+   & .contact-title-h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 32px;
+      font-family: $ftTitle;
+      font-weight: $wtPrimary;
+      color: $clTextPrimary;
+   }
+
+   & .contact-paragraph-p {
+      padding: 0 20px;
+      text-align: center;
+      font-size: 16px;
+      font-family: $ftParagraph;
+      font-weight: $wtParagraph;
+      color: $clTextSecondary;
+   }
+}
+
+.box-contact-phone,
+.box-contact-email,
+.box-contact-addres {
+   display: flex;
+   margin-bottom: 40px;
+   padding-left: 10px;
+}
+
+.box-contact-phone {
+   margin-top: 50px;
+}
+
+.box-text {
+   margin-left: 30px;
+
+   & .contact-title {
+      margin-top: 18px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-family: $ftTitle;
+      font-weight: $wtPrimary;
+      color: $clTextPrimary;
+   }
+
+   & .phone,
+   & .email,
+   & .address {
+      font-size: 15px;
+      font-family: $ftSubParagrah;
+      font-weight: $wtLight;
+      color: $clTextSecondary;
+   }
+}
+
+
+// ---- ---------------------- ----
+// ---- ESTILOS DEL FORMULARIO ----
+// ---- ---------------------- ----
+
+.content-form-contact {
+   width: auto;
+   padding: 20px 10px;
+   margin-top: 50px;
+   background-color: $bgSecondary;
+}
+
+.box-form {
+   padding: 40px 35px 35px;
+   background-color: $bgWhite;
+   border-radius: 5px;
+   box-shadow: 0px 16px 46px rgba(0, 0, 0, 0.1);
+}
+
+.form-content {
+   // background: lightsalmon;
+
+   & .form-label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-family: $ftSubParagrah;
+      font-weight: $wtLight;
+      color: $clTextSecondary;
+
+      & .label-check {
+         color: $clTextDanger;
+      }
+
+   }
+
+   & .form-input {
+      width: 98%;
+      height: 40px;
+      margin-bottom: 10px;
+      padding: 0 5px;
+      outline: none;
+      background-color: $bgLabelForm;
+      border: 0;
+      font-family: $ftParagraph;
+      font-weight: $wtParagraph;
+      color: $clTextPrimary;
+
+      &::placeholder {
+         font-size: 14px;
+         font-family: $ftSubParagrah;
+         font-weight: $wtLight;
+         color: $clTextSuccess;
+      }
+   }
+
+   & .form-textarea {
+      width: 98%;
+      height: 160px;
+      padding: 10px 5px;
+      outline: none;
+      background-color: $bgLabelForm;
+      border: 0;
+      font-family: $ftParagraph;
+      color: $clTextPrimary;
+      resize: none;
+
+      &::placeholder {
+         font-size: 14px;
+         font-family: $ftSubParagrah;
+         font-weight: $wtLight;
+         color: $clTextSuccess;
+      }
+   }
+}
+
+.box-btn-form {
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+
+   & .btn-form {
+      @include buttons(150px, $bgBtnDanger);
+      outline: none;
+      border: 0;
+   }
+}

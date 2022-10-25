@@ -1,0 +1,16 @@
+//- Section Nuestros Clientes de la página
+
+section(class="main-section-clients" id="nuestros-clientes")
+   div(class="box-section-clients")
+      include ../mixins/pagination.pug
+      div(class="page-clients")
+         +pagination(paginations.pageThree)
+      header(class="content-clients")
+         div(class="clients-title")
+            h2(class="clients-title-h2") #{titleClient}
+         div(class="box-clients")
+            a(class="clients-links wow" ,href="#")
+               img(src="./assets/img/imgClients/img-tottos.png", alt="")
+            a(class="clients-links wow" ,href="#")
+               img(src="./assets/img/imgClients/img-parody.png", alt="")
+            
